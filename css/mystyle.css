@@ -1,0 +1,18 @@
+
+        /* p{
+            background-color: green;
+            color: yellow;
+        } */
+        .abc{
+            font-size: 20px;
+            color: blue !important;
+        }
+        .xyz{
+            color: aqua;
+            background-color: red;
+            font-style: italic;
+        }
+        #myid{
+            color: aqua;
+            background-color: brown;
+        }
