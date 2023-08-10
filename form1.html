@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+            background-image: url(images/camel.jpg);
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <label for="name">Full Name:</label>
-         <input required  type="text"id="name" placeholder="Enter your name">  <!--disabled-->
+    <div style="width: 100%;height: 100px; background-color:hotpink;background-size: cover;font-family: Arial, Helvetica, sans-serif; border-bottom: 2px dotted green;">
+        <h1 style="margin-left: 350px;padding-top: 30px;"><u><b>CAR DEKHO OR PURCHASE KRO</b></u></h1>
+    </div>
+    <form style="margin-left:450px; margin-top:50px;color:maroon;">
+        <fieldset style="width: 50%;">
+            <legend>Persional detail</legend>
+        <label for="name"><b>Full Name:</b></label>
+         <input   type="text"id="name" placeholder="Enter your name">  <!--disabled-->
         <br><br>
-        <label for="pass">Password:</label>
-        <input readonly type="password" id="pass" placeholder="Enter your password">
+        <label for="pass"><b>Password:</b></label>
+        <input  type="password" id="pass" placeholder="Enter your password">      <!--readonly -->
         <br><br>
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" placeholder="mail">
+        <label for="mail"><b>Email:</b></label>
+        <input type="email" id="mail" placeholder="mail"></fieldset> 
         <br><br>
-        <input type="date">
-        <br><br>
-         <input type="file" multiple accept="photo/*">   <!--multiple attribute used for choosing multiple files and  accept used for type of file photo or video-->
-<br>
-         <input width="50" height="40" type="image" src="images/cat.jpeg">  <!--it works as submit button --> 
+        <!-- <input type="tel" pattern="[0-9]{10}"> -->
+        <input type="tel" pattern="[9]{1}[0-9]{9}">
         <br>
+        <!-- <input type="date">  -->
+        <input type="date" min="2023-08-13" max="2023-08-30">
+        <br><br>
+         <input type="file" multiple accept="photo/*">  <!--multiple attribute used for choosing multiple files and  accept used for type of file photo or video-->
+<br><br>
+         <input width="50" height="40" type="image" src="images/cat.jpeg">  <!--it works as submit button --> 
+        <br><br>
         <input type="radio" id="male" name="gender">
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender">
         <label for="female">Female</label>
-        <br>
-        Select the given course:
+        <br><br>
+       <b>Select the given course:</b> 
         <input type="checkbox">
         <label for="course">English</label>
         <input type="checkbox">
         <label for="course">hindi</label>
-        
-        <br>
-         <input type="submit" value="Login">
+        <br><br>
+       <b> Select Your City:</b> 
+        <select name="city" id="city">
+            <optgroup label="State1"></optgroup>
+            <option value="1">Jaipur</option>
+            <option value="2">Jodhpur</option>
+            <option value="3" disabled>Jaisalmer</option>
+            <option value="4">Ajmer</option>
+            <optgroup label="State2"></optgroup>
+            <option value="1">Ahmdabad</option>
+            <option value="2">Gujrat</option>
+            <option value="3">Kacch</option>
+            <option value="4">Panipol</option>
+        </select>
+        <br><br>
+        <textarea placeholder="Give your beautiful words"></textarea>
+        <br><br>
+
+         <input type="submit" value="Login" style="color: blue; background-color: pink; border-radius: 50px; align-self: center;margin-left: 200px;">
     </form>
 </body>
 </html>
